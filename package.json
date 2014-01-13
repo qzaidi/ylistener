@@ -4,9 +4,6 @@
   "description": "Yahoo Process Watcher Wrapper",
   "main": "index.js",
   "dependencies": {
-    "process-watcher": "*",
-    "monitr": "*",
-    "mod_statuspage": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

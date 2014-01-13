@@ -11,7 +11,14 @@ log() {
   echo "  ○ $@"
 }
 
-log "Installing upstart config"
-sudo cp ylistener.conf /etc/init/
+if [ -e '/etc/init/' ]; then
+  log "Installing packages"
+  npm install process-watcher
+  npm install monitr
+  npm install mod_statuspage
+  log "Installing upstart config"
+  sudo cp ylistener.conf /etc/init/
+  status ylistener || sudo start ylistener
+fi
 
-status ylistener || sudo start ylistener
+
