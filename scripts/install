@@ -12,6 +12,6 @@ log() {
 }
 
 log "Installing upstart config"
-cp ylistener.conf /etc/init/
+sudo cp ylistener.conf /etc/init/
 
-start ylistener
+sudo start ylistener
