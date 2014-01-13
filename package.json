@@ -2,7 +2,7 @@
   "name": "ylistener",
   "version": "0.0.2",
   "description": "Yahoo Process Watcher Wrapper",
-  "main": "ylistener.js",
+  "main": "index.js",
   "dependencies": {
     "process-watcher": "*",
     "monitr": "*",
