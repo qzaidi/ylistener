@@ -1,0 +1,17 @@
+#!/bin/sh
+
+abort() {
+  echo
+  echo "  $@" 1>&2
+  echo
+  exit 1
+}
+
+log() {
+  echo "  ○ $@"
+}
+
+log "Installing upstart config"
+cp ylistener.conf /etc/init/
+
+start ylistener
